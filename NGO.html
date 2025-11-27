@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vatsalya NGO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">Vatsalya NGO</div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#causes">Causes</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="btn btn-small btn-donate" id="openDonateBtn">
+                    Donate
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    ☰
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div>
+                <h1>Together, We Can Change Lives</h1>
+                <p>Vatsalya NGO works with underprivileged communities to provide education, healthcare, and shelter.</p>
+                <div class="hero-actions">
+                    <button class="btn" id="heroDonateBtn">Donate Now</button>
+                    <a href="#about" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Our Mission</h2>
+            <p>
+                Vatsalya NGo is a non-profit organization focused on sustainable development projects in rural and urban slum areas.
+                We collaborate with local communities to create long-term impact through education, health camps, and livelihood programs.
+            </p>
+            <div class="about-grid">
+                <div class="card">
+                    <h3>Vision</h3>
+                    <p>Build a world where every child has access to education, nutrition, and a safe home.</p>
+                </div>
+                <div class="card">
+                    <h3>Mission</h3>
+                    <p>Empower vulnerable families with resources, training, and support to break the cycle of poverty.</p>
+                </div>
+                <div class="card">
+                    <h3>Values</h3>
+                    <p>Transparency, inclusion, dignity, and community-led change are at the heart of everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Causes Section -->
+    <section id="causes" class="section section-alt">
+        <div class="container">
+            <h2>Our Key Causes</h2>
+            <div class="causes-grid">
+                <article class="cause-card">
+                    <h3>Child Education</h3>
+                    <p>After-school learning centers, scholarships, and digital literacy programs.</p>
+                    <button class="btn btn-small cause-donate" data-cause="Child Education">
+                        Support Education
+                    </button>
+                </article>
+                <article class="cause-card">
+                    <h3>Healthcare Camps</h3>
+                    <p>Regular health check-ups, vaccinations, and maternal health awareness drives.</p>
+                    <button class="btn btn-small cause-donate" data-cause="Healthcare Camps">
+                        Support Healthcare
+                    </button>
+                </article>
+                <article class="cause-card">
+                    <h3>Emergency Relief</h3>
+                    <p>Food, shelter, and essentials for families affected by natural disasters.</p>
+                    <button class="btn btn-small cause-donate" data-cause="Emergency Relief">
+                        Support Relief
+                    </button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Counters -->
+    <section id="impact" class="section">
+        <div class="container">
+            <h2>Impact So Far</h2>
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <span class="counter" data-target="1500">0</span>
+                    <p>Children Enrolled</p>
+                </div>
+                <div class="impact-item">
+                    <span class="counter" data-target="250">0</span>
+                    <p>Health Camps</p>
+                </div>
+                <div class="impact-item">
+                    <span class="counter" data-target="80">0</span>
+                    <p>Villages Reached</p>
+                </div>
+                <div class="impact-item">
+                    <span class="counter" data-target="500">0</span>
+                    <p>Active Volunteers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="section section-alt">
+        <div class="container volunteer-grid">
+            <div>
+                <h2>Become a Volunteer</h2>
+                <p>
+                    Join our growing network of volunteers who contribute their time and skills
+                    to teaching, community outreach, fundraising, and more.
+                </p>
+                <ul class="bullet-list">
+                    <li>Weekend teaching and mentoring.</li>
+                    <li>Organizing donation drives.</li>
+                    <li>Design and tech support for campaigns.</li>
+                </ul>
+            </div>
+            <form id="volunteerForm" class="form-card">
+                <h3>Volunteer Sign-up</h3>
+                <label>
+                    Full Name
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Area of Interest
+                    <select name="interest" required>
+                        <option value="">Select one</option>
+                        <option value="teaching">Teaching</option>
+                        <option value="healthcare">Healthcare support</option>
+                        <option value="fundraising">Fundraising</option>
+                        <option value="tech">Tech & Design</option>
+                    </select>
+                </label>
+                <button type="submit" class="btn btn-block">Submit</button>
+                <p class="form-message" id="volunteerMsg"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container contact-grid">
+            <div>
+                <h2>Contact Us</h2>
+                <p>Email: contact@vatsalya.org</p>
+                <p>Phone: +91 0101000110</p>
+                <p>Address: 123 masani, Mathura, India</p>
+            </div>
+            <form id="contactForm" class="form-card">
+                <h3>Send a Message</h3>
+                <label>
+                    Name
+                    <input type="text" name="cname" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="cemail" required>
+                </label>
+                <label>
+                    Message
+                    <textarea name="cmessage" rows="4" required></textarea>
+                </label>
+                <button type="submit" class="btn btn-block">Send</button>
+                <p class="form-message" id="contactMsg"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Vatsalya NGO. All rights reserved.</p>
+            <p>Made with ❤️ to support communities in need.</p>
+        </div>
+    </footer>
+
+    <!-- Donate Modal -->
+    <div class="modal" id="donateModal" aria-hidden="true">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="donateTitle">
+            <button class="modal-close" id="closeDonateBtn">&times;</button>
+            <h3 id="donateTitle">Donate to vatsalya NGO</h3>
+            <p id="donateCauseLabel">Your contribution will support all our causes.</p>
+            <form id="donateForm" class="form-card modal-form">
+                <label>
+                    Name
+                    <input type="text" name="dname" required>
+                </label>
+                <label>
+                    Amount (₹)
+                    <input type="number" name="damount" min="100" step="50" required>
+                </label>
+                <label>
+                    Payment Method
+                    <select name="method" required>
+                        <option value="">Select</option>
+                        <option value="upi">UPI</option>
+                        <option value="card">Card</option>
+                        <option value="netbanking">Net Banking</option>
+                    </select>
+                </label>
+                <button type="submit" class="btn btn-block">Proceed</button>
+                <p class="form-message" id="donateMsg"></p>
+            </form>
+        </div>
+    </div>
+    <link rel="stylesheet" href="NGOcss.css">
+
+    <script src="script.js"></script>
+</body>
+</html>
